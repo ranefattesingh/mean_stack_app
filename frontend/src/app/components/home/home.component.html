@@ -1,1 +1,25 @@
-<p>home works!</p>
+<div class="jumbotron text-center my-5">
+    <h1>M.E.A.N Stack Demo App</h1>
+    <p class="lead">
+        Welcome to a sample M.E.A.N Stack app, this app includes passport authentication (F.Y.I passport is ExpressJs library)
+    </p>
+    <div>
+        <a [routerLink]="'/register'" class="btn btn-primary me-1">Register</a>
+        <a [routerLink]="'/login'" class="btn btn-secondary">Login</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Express Backend</h3>
+        <p>A rock solid NodeJs/ExpressJs backend using Mongoose to organize models and to query database.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Angular-CLI</h3>
+        <p>Angular-CLI to generate component, services and more. Local dev server and easy compilation</p>
+    </div>
+    <div class="col-md-4">
+        <h3>JWT Tokens</h3>
+        <p>Full featured authentication using JSON web tokens. Login and store user data</p>
+    </div>
+</div>
