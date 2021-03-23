@@ -51,7 +51,9 @@ export class RegisterComponent implements OnInit {
         this.flashMessagesService.show("User Account Created, please login to continue.", {cssClass: 'alert-success mt-2', timeout: 2000 })
         this.router.navigate(['/login'])
       } else {
-        this.flashMessagesService.show("Something went wrong...", {cssClass: 'alert-danger mt-2', timeout: 2000 })
+        this.flashMessagesService.show("Something went wrong...", {
+          cssClass: 'alert-danger mt-2', timeout: 2000 
+        })
       }
     });
     return true;
